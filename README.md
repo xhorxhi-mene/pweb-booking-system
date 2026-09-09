@@ -18,7 +18,7 @@ Clients can register, log in, and book appointments online; salon staff manage b
 
 **Security**
 - Prepared statements (mysqli) against SQL injection
-- CSRF token verification on all forms
+- CSRF token verification on authentication forms (login, registration, password change)
 - Session timeout after 30 minutes of inactivity
 - "Ghost session" check — invalidates sessions tied to deleted users
 - Server-side input validation (e.g. email format)
@@ -40,12 +40,12 @@ Clients can register, log in, and book appointments online; salon staff manage b
 │   ├── cliente/              # Client area, booking, profile
 │   └── script/                # Shared logic: auth, session, DB connection
 ├── manuale.html             # User manual
-└── *.sql                     # Database schema
+└── mene_db.sql              # Database schema
 ```
 
 ## Setup
 
-1. Import the `.sql` file into a local MySQL database.
+1. Import `mene_db.sql` into a local MySQL database.
 2. Update the database credentials in `php/script/connessione.php` if needed (defaults to local XAMPP/WAMP-style setup: `root`, no password).
 3. Serve the project with a local PHP server (e.g. XAMPP, WAMP, or `php -S localhost:8000`).
 4. Open `index.php` in the browser.
