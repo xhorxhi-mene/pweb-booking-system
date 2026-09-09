@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="it"> 
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Salone Professionale - Home</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header>
+            <h1>Manuale d'uso</h1>
+            <nav>
+                <a href="index.php">Torna alla Home</a>
+            </nav>
+        </header>
+        <h1 id="titolo">Come usare il servizio</h1>
+        <main >
+        <section id="manuale">
+            <div class="manuale-grid">
+
+                <div class="manuale-card" style="background-color: #d9e6ff;">
+                    <div class="manuale-card-header">
+                        <div>
+                            <h2>Amministratore</h2>
+                            <p class="sub">Accesso completo al salone</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-num num-admin">1</div>
+                        <div class="step-body">
+                            <strong>Dashboard</strong>
+                            <p>Visualizza tutti gli appuntamenti in ordine cronologico. Puoi cancellare qualsiasi prenotazione senza limiti di tempo.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-num num-admin">2</div>
+                        <div class="step-body">
+                            <strong>Segna buca</strong>
+                            <p>Se un cliente non si presenta, clicca "Buca". A 3 buche cumulate il cliente viene automaticamente messo in lista ristretta.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-num num-admin">3</div>
+                        <div class="step-body">
+                            <strong>Anagrafica clienti</strong>
+                            <p>Consulta tutti i clienti registrati con dati di contatto e numero di assenze.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-num num-admin">4</div>
+                        <div class="step-body">
+                            <strong>Configura blacklist</strong>
+                            <p>Vedi chi &egrave; in lista ristretta, grazia un cliente azzerandone il contatore e scegli quali orari possono prenotare.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="manuale-card" style="background-color: #f0fdf4;">
+                    <div class="manuale-card-header">
+                        <div>
+                            <h2>Cliente</h2>
+                            <p class="sub">Prenota e gestisci i tuoi appuntamenti</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-num num-user">1</div>
+                        <div class="step-body">
+                            <strong>Registrazione</strong>
+                            <p>Clicca "Registrati" e inserisci nome, cognome, email, telefono e password. Usa email e password per accedere.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-num num-user">2</div>
+                        <div class="step-body">
+                            <strong>Prenota un appuntamento</strong>
+                            <p>Clicca "Prenota Ora", scegli il servizio, seleziona il giorno dal calendario e clicca l&rsquo;orario desiderato. Gli slot grigi sono gi&agrave; occupati.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-num num-user">3</div>
+                        <div class="step-body">
+                            <strong>I miei appuntamenti</strong>
+                            <p>Visualizza le prenotazioni future. Puoi avere un solo appuntamento attivo alla volta.</p>
+                            <span class="badge-warn">Cancellazione entro 2 ore prima</span>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-num num-user">4</div>
+                        <div class="step-body">
+                            <strong>Lista ristretta</strong>
+                            <p>Dopo 3 assenze ingiustificate, potrai prenotare solo negli orari limitati scelti dall&rsquo;amministratore.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="manuale-card inline">
+                    <div class="manuale-card-header">
+                        <div>
+                            <h2>Credenziali di test</h2>
+                            <p class="sub">Dati per accedere durante la valutazione</p>
+                        </div>
+                    </div>
+                    <div class="step-container">
+                        <div class="step">
+                            <div class="step-body">
+                                <strong>Amministratore</strong>
+                                <p>Email: admin@salone.it</p>
+                                <p>Password: admin1234</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-body">
+                                <strong>Cliente di test</strong>
+                                <p>Email: mario@test.it</p>
+                                <p>Password: admin1234</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="manuale-card inline">
+                    <p >
+                        Tutte le tecniche di sicurezza avanzate adottate in questo progetto (come l'hardening delle sessioni, i token anti-CSRF, la validazione Regex e i Prepared Statements per prevenire le SQL Injection)
+                        sono state studiate e implementate seguendo rigorosamente le linee guida del libro di testo consigliato dal professore: <br><br>
+                        📖 <a href="https://learning.oreilly.com/library/view/building-secure-php/9798868809323/" target="_blank" rel="noopener noreferrer" style="color: #3498db; font-weight: bold; text-decoration: none;">
+                            Building Secure PHP Applications: A Comprehensive Guide to Protecting Your Web Applications from Threats
+                        </a>
+                    </p>
+                </div>
+            </div>
+
+
+        </section>
+        </main>
+    </body>
+</html>
